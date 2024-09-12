@@ -1,0 +1,38 @@
+project:
+  type: book
+
+book:
+  title: "babeltest"
+  author: "Pascal Burkhard"
+  date: "12.09.2024"
+  chapters:
+    - index.qmd
+    - part: "Intro"
+      part-fr: "Introduction"
+      chapters:
+        - intro.qmd
+    - part: "Summary"
+      part-fr: "Résumé"
+      chapters:
+        - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+
+babelquarto:
+  languagelinks: sidebar
+  languagecodes:
+  - name: fr
+    text: "Version in fr"
+  - name: en
+    text: "Version in en"
+  mainlanguage: 'en'
+  languages: ['fr']
+title-fr: title in fr
+description-fr: description in fr
+author-fr: author in fr
+lang: en
